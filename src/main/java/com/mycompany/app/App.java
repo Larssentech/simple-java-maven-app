@@ -7,10 +7,14 @@ public class App {
 
     private static final String MESSAGE = "Hello World!";
 
-    public App() {}
+    public App() {
+    	
+    	System.out.println(this.getMessage());
+    	
+    }
 
     public static void main(String[] args) {
-        System.out.println(MESSAGE);
+        new App();
     }
 
     public String getMessage() {
